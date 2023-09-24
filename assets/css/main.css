@@ -1,0 +1,340 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    cursor: crosshair;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Hero section */
+
+.hero {
+    background-color: var(--blue-1, #042940);
+    color: #ECECEC;
+    min-height: 38rem;
+}
+
+h1 {
+    color: var(--lime-green, #DBF227);
+    text-align: center;
+    padding-block: 10rem;
+    font-size: 2.5rem;
+}
+
+h6 {
+    text-align: center;
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* Tech n tools section, making them all sized the same and flexible */
+
+@media ( max-width: 700px) {
+    @keyframes slide {
+        from {
+            transform: translateX(0);
+        }to {
+            transform: translateX(-100%);
+        }
+        
+    }
+    
+    .logos {
+        overflow: hidden;
+        display: flex;
+    }
+    
+    .logos:hover .logos-slide,.logos:hover .logos-slide2 {
+        animation-play-state: paused;
+    }
+    
+    .logos-slide, .logos-slide2 {
+        display: flex;
+        animation: 10s slide infinite linear;
+    }
+    
+    .logos-slide > div, .logos-slide2 > div {
+        margin-inline: 2rem;
+        margin-block: 3rem;
+    }
+    
+    .logos-slide img, .logos-slide2 img {
+        max-width: 2.5rem;
+        max-height: 2.5rem;
+        margin: 0 auto;
+    }
+    
+    .logos p {
+        text-align: center;
+        margin-top: 1rem;
+        font-size: .8rem;
+    }
+
+
+}
+
+/* About me section */
+
+.about {
+    background-color: #ECECEC;
+}
+
+section.about, section#work {
+    padding: 3rem;
+}
+
+section.about h2 {
+    margin: 2rem 0;
+    font-size: 2.5rem;
+}
+
+section.about h3 {
+    font-size: 0.7rem;
+}
+
+.about .container p {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    text-align: justify;
+    margin-block: 2rem;
+}
+
+.about .container .col2 p {
+    margin-bottom: 0;
+}
+  
+
+/* WORK section */
+
+.hide-mobile {
+    display: none;
+}
+
+section#work {
+    background-color: #042940;
+}
+
+section#work h3 {
+    font-size: 0.7rem;
+    color: #DBF227;
+}
+
+section#work h2 {
+    margin: 2rem 0;
+    font-size: 2.5rem;
+    color: #DBF227;
+}
+
+.projects {
+    max-width: 20rem;
+    margin: 0 auto;
+}
+
+.projects img {
+    border-radius: 1rem;
+    margin: 0 auto 2rem;
+}
+
+#project5 img{
+    margin-bottom: 0;
+}
+
+.set3 {
+    display: block;
+}
+  
+/* Media queries for larger screen sizes then 700px */
+
+
+@media ( min-width: 701px) {
+
+    /* Hero section */
+
+    .hero {
+        min-height: 35rem;
+    }
+
+    h1 {
+        padding-bottom: 5rem;
+    }
+
+    
+    .hero h1 {
+        -webkit-animation: water-effect 3s infinite ease-in-out;
+        animation: water-effect 3s infinite ease-in-out;
+    }
+    @-webkit-keyframes water-effect {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-15px);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+    @keyframes water-effect {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-15px);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    h6 {
+        font-size: .55rem;
+        margin-bottom: 4rem;
+    }
+
+    .logos {
+        display: flex;
+    }
+
+    .logos-slide {
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .logos-slide img {
+        max-width: 2.5rem;
+        max-height: 2.5rem;
+        margin: 0 auto;
+    }
+
+    .logos-slide2 {
+        display: none;
+    }
+
+    .logos-slide > div {
+        margin-inline: 1rem;
+    }
+
+    .logos-slide > div:nth-child(2) {
+        margin-right: 5rem;
+    }
+
+    .logos-slide p {
+        font-size: 0.7rem;
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+
+
+    /* About me section */
+
+    .aboutme--flex {
+        display: flex;
+    }
+
+    .about .container h2 {
+        max-width: 15rem;
+        padding-right: 2rem;
+
+    }
+
+    .about .container p {
+        margin-block: 2rem;
+        max-width: 30rem;
+    }
+
+
+    /* WORK section */
+
+    #work {
+        min-height: 30rem;
+    }
+
+    #work .projects {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        max-width: 50rem;
+    }
+
+    .set1 {
+        display: flex;
+    }
+    
+    .set2 {
+        display: flex;
+        margin-top: 2rem;
+    }
+
+    .set3 {
+        display: flex;
+        margin-top: 2rem;
+    }
+
+    #work .projects a {
+        flex: 1;
+        margin: 0 2rem;
+    }
+
+    #work .projects img {
+        margin: 0;
+        min-width: 8.5rem;
+    }
+}
+
+@media ( min-width: 900px ) {
+
+    /* About me section */
+
+    .about .container p {
+        margin-inline: auto;
+        max-width: 40rem;
+    }
+
+    /* WORK section */
+
+    #work .projects {
+     max-width: 50rem;
+    }
+}
+
+@media ( min-width: 1100px ) {
+
+    /* About me section */
+
+    .about {
+        min-height: 20rem;
+    }
+
+    .about .flex {
+        display: flex;
+        margin-inline: auto;
+    }
+
+    .about .flex > div {
+        flex: 1;
+        margin-right: 3rem;
+    }
+
+    #work .projects {
+        max-width: 80rem;
+    }
+
+    .hide-mobile {
+        display: flex;
+    }
+
+    .hide-desktop {
+        display: none;
+    }
+    
+}
+

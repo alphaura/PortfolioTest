@@ -1,0 +1,120 @@
+.work--flex .col2 .flex{
+    justify-content: flex-end;
+}
+
+.cards .mobile-text-hover h3 {
+    font-size: 1.4rem;
+    margin-top: 0;
+}
+
+.mobile-text-hover p {
+    font-size: .75rem;
+}
+
+.mobile-text-hover a {
+    font-size: 0.9rem;
+}
+
+.mobile-text-hover {
+    max-width: 330px;
+    z-index: 5;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-self: center;
+}
+
+.mobile-text-hover h3, p, .text-flex {
+    margin-block: 2rem;
+}
+
+.mobile .container .overlay-text {
+    display: flex;
+    flex-direction: column;
+    color: #DBF227;
+}
+
+.mobile-text-hover .text-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.card .container img {
+    width: 100%;
+}
+
+.card .container {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.overlay-text:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.card a {
+    color: #DBF227;
+    text-decoration: none;
+    z-index: 1;
+    font-weight: bold;
+}
+
+.background-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(203, 18%, 14%, 0.689);
+    backdrop-filter: blur(2px);
+}
+
+.desktop {
+    display: block;
+}
+
+
+
+@media ( min-width: 600px ) {
+    .mobile {
+        opacity: 0;
+    }
+
+    .card a {
+        font-size: 1rem;
+    }
+}
+
+@media ( min-width: 850px ) {
+    .cards  .container .flex-cards {
+        display: flex;
+        opacity: 1;
+        justify-content: space-around;
+        flex: 1;
+    }
+
+    .flex-cards .card .container {
+        margin-inline: 1rem;
+        justify-content: space-between;
+        flex: 1;
+    }
+
+
+}

@@ -1,0 +1,108 @@
+/* CSS Document */
+/* The below CSS is for the contact form and the signature, to keep consistency throughout the pages */
+
+footer {
+    background: #01141F;
+    color: white;
+    padding: 3rem;
+
+  }
+  
+  #contact p {
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+  }
+  
+  #contact a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .email-link {
+    position: relative;
+    display: inline-block;
+    color: inherit;
+    transition: transform 0.3s ease-out;
+  }
+  
+  .email-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: #9FC131;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-out;
+  }
+  
+  .email-link:hover {
+    transform: translateY(-2px);
+  }
+  
+  .email-link:hover::after {
+    transform: scaleX(1);
+  }
+  
+  
+  .footer--flex {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+  }
+
+  #signature p {
+    font-size: 0.7rem;
+  }
+  
+  footer h2 {
+      color: #DBF227;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+  }
+  
+  footer .socials {
+      display: flex;
+      align-items: center;
+  }
+  
+  footer img {
+      margin-left: 0.5rem;
+      width: 1.2rem;
+      border-radius: 2px;
+  }
+  
+  footer img:hover {
+      background-color: #9FC131;
+  }
+
+  .text-show {
+    opacity: 0;
+    font-weight: bold;
+    font-size: .8rem;
+  }
+
+  .text-show:hover {
+    opacity: 1;
+    color: red;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  @media ( min-width: 1000px ) {
+    
+    footer h2 {
+      font-size: 2.5rem;
+    }
+    
+    #contact p{
+      font-size: 1.4rem;
+      max-width: 1000px;
+    }
+
+    #signature p {
+      font-size: 0.9rem;
+    }
+    
+  }
