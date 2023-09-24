@@ -257,14 +257,6 @@ section#work h2 {
         min-height: 30rem;
     }
 
-    #work .projects {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        max-width: 50rem;
-    }
-
     .set1 {
         display: flex;
     }
@@ -279,15 +271,6 @@ section#work h2 {
         margin-top: 2rem;
     }
 
-    #work .projects a {
-        flex: 1;
-        margin: 0 2rem;
-    }
-
-    #work .projects img {
-        margin: 0;
-        min-width: 8.5rem;
-    }
 }
 
 @media ( min-width: 900px ) {
@@ -302,11 +285,18 @@ section#work h2 {
     /* WORK section */
 
     #work .projects {
-     max-width: 50rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem 3rem;
+        max-width: 40rem;
+    }
+
+    #work .projects img {
+        margin: 0;
     }
 }
 
-@media ( min-width: 1100px ) {
+@media ( min-width: 1200px ) {
 
     /* About me section */
 
@@ -325,16 +315,8 @@ section#work h2 {
     }
 
     #work .projects {
-        max-width: 80rem;
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 65rem;
     }
-
-    .hide-mobile {
-        display: flex;
-    }
-
-    .hide-desktop {
-        display: none;
-    }
-    
 }
 
