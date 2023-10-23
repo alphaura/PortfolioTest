@@ -1,53 +1,38 @@
-*, *::before, *::after {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-}
-
-img {
-    max-width: 100%;
-    display: block;
-}
-
 .nav {
-    padding: 1rem 3rem;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 999;
-    background: rgba(3, 39, 61, 0.886);
+    padding: 1rem 1.5rem;
+    background: whitesmoke;
     backdrop-filter: blur(1px);
 }
 
 .nav-flex {
     display: flex;
     justify-content: space-between;
-    
 }
 
 .nav ul {
     padding: 0;
+    margin: 0;
     display: flex;
+    flex-direction: column;
 }
 
 .nav ul li {
     list-style: none;
+    text-align: center;
 }
 
 li + li {
-    padding-left: 2.5rem;
+    padding-top: .8rem;
 }
 
 .nav ul li a {
     position: relative;
     display: inline-block;
-    color: inherit;
     transition: transform 0.3s ease-out;
     text-decoration: none;
-    color: #ECECEC;
-    font-weight: 200;
+    font-weight: bold;
+    color: black;
+    font-size: .7rem;
 }
 
 .nav ul li a::after {
@@ -73,16 +58,10 @@ li + li {
   }
 
 .navLogo {
-    align-self: center;
-    color: #DBF227;
-    font-weight: 700;
+    align-self: flex-start;
+    color: black;
+    font-weight: bold;
     text-decoration: none;
     cursor: pointer;
-}
-
-@media ( max-width: 500px) {
-    .navLogo {
-        font-size: .7rem;
-        padding-right: .5rem;
-    }
+    font-size: .7rem;
 }
