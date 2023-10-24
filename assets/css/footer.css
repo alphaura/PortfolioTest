@@ -2,15 +2,17 @@
 /* The below CSS is for the contact form and the signature, to keep consistency throughout the pages */
 
 footer {
-    background: #01141F;
+    background: black;
     color: white;
     padding: 1.5rem;
-
+    text-align: center;
+    border-top: 2px solid whitesmoke;
   }
   
   #contact p {
-    font-size: 1.2rem;
-    line-height: 2.5rem;
+    font-size: .8rem;
+    
+    line-height: 1.5rem;
   }
   
   #contact a {
@@ -58,9 +60,14 @@ footer {
   }
   
   footer h2 {
-      color: #DBF227;
-      font-size: 2.5rem;
+      color: #70E000;
+      font-size: 1.5rem;
       margin-bottom: 2rem;
+  }
+
+  footer h3 {
+    font-size: 3.5rem;
+    padding-bottom: 1rem;
   }
   
   footer .socials {
@@ -76,18 +83,6 @@ footer {
   
   footer img:hover {
       background-color: #9FC131;
-  }
-
-  .text-show {
-    opacity: 0;
-    font-weight: bold;
-    font-size: .8rem;
-  }
-
-  .text-show:hover {
-    opacity: 1;
-    color: red;
-    transition: opacity 1s ease-in-out;
   }
   
   @media ( min-width: 1000px ) {

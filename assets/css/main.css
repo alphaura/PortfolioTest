@@ -91,8 +91,9 @@ section.about, section#work {
 
 section.about h2 {
     margin: 2rem 0;
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: #70E000;
+    text-align: center;
 }
 
 section.about h3 {
@@ -113,7 +114,7 @@ section.about h3 {
 
 /* WORK section */
 
-.hide-mobile {
+.highlight5 {
     display: none;
 }
 
@@ -122,14 +123,23 @@ section#work {
 }
 
 section#work h3 {
-    font-size: 0.7rem;
-    color: #DBF227;
+    font-size: 1rem;
+    color: black;
 }
 
-section#work h2 {
-    margin: 2rem 0;
-    font-size: 2.5rem;
-    color: #DBF227;
+section#work p {
+    padding-block: 1rem 3rem;
+    font-size: .9rem;
+}
+
+.moreProjects {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    display: grid;
+    place-items: center;
+    font-size: 1.1rem;
+    padding-bottom: 2rem;
 }
 
 .projects {
@@ -149,7 +159,55 @@ section#work h2 {
 .set3 {
     display: block;
 }
+
+
+/* The Creative Timeline Section */
+
+#timeline {
+    color: whitesmoke;
+    background-color: black;
+}
   
+#timeline h2 {
+    color: #70E000;
+    font-size: 2.5rem;
+    padding: 1.5rem 1.5rem 0;
+    text-align: center;
+}
+
+.year2022 {
+    display: flex;
+    padding: 2rem 1.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    /* border-block: 1px solid whitesmoke; */
+}
+
+#timeline hr {
+    width: 100%;
+    padding: 0;
+}
+
+.year2023 {
+    display: flex;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 2rem 1.5rem;
+}
+
+.year2022 p:nth-child(1), .year2023 p:nth-child(1){
+    padding-right: 2rem;
+}
+
+.achieve-2023 p:nth-child(1) {
+    padding-right: 0;
+}
+
+.achieve-2023 p + p {
+    padding-top: 1rem;
+}
+
+
 /* Media queries for larger screen sizes then 700px */
 
 
