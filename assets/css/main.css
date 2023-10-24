@@ -123,7 +123,7 @@ section#work {
 }
 
 section#work h3 {
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: black;
 }
 
@@ -152,14 +152,6 @@ section#work p {
     margin: 0 auto 2rem;
 }
 
-#project5 img{
-    margin-bottom: 0;
-}
-
-.set3 {
-    display: block;
-}
-
 
 /* The Creative Timeline Section */
 
@@ -186,6 +178,7 @@ section#work p {
 #timeline hr {
     width: 100%;
     padding: 0;
+    margin: 0;
 }
 
 .year2023 {
@@ -193,6 +186,10 @@ section#work p {
     font-size: 1.2rem;
     font-weight: bold;
     padding: 2rem 1.5rem;
+}
+
+.year2022, .year2023 {
+    justify-content: space-around;
 }
 
 .year2022 p:nth-child(1), .year2023 p:nth-child(1){
@@ -216,11 +213,12 @@ section#work p {
     /* Hero section */
 
     .hero {
-        min-height: 35rem;
+        min-height: 30rem;
     }
 
     h1 {
         padding-bottom: 5rem;
+        font-size: 6rem;
     }
 
     
@@ -308,27 +306,20 @@ section#work p {
         max-width: 30rem;
     }
 
+    /* The Creative Timeline Section */
 
-    /* WORK section */
-
-    #work {
-        min-height: 30rem;
+    .year2022 p, .year2023 p {
+        font-size: 1.5rem;
     }
 
-    .set1 {
-        display: flex;
-    }
-    
-    .set2 {
-        display: flex;
-        margin-top: 2rem;
+    .year2022, .year2023 {
+        padding-block: 4rem;
     }
 
-    .set3 {
-        display: flex;
-        margin-top: 2rem;
+    #timeline h2 {
+        font-size: 3rem;
+        padding-block: 3rem;
     }
-
 }
 
 @media ( min-width: 900px ) {
@@ -345,16 +336,30 @@ section#work p {
     #work .projects {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 2rem 3rem;
-        max-width: 40rem;
+        padding-top: 2rem;
+        gap: 2rem 10rem;
+        max-width: 45rem;
     }
 
-    #work .projects img {
-        margin: 0;
+    .moreProjects {
+        font-size: 2rem;
     }
+
+    
+    
 }
 
 @media ( min-width: 1200px ) {
+
+     /* Hero section */
+
+    .hero {
+        min-height: 35rem;
+    }
+
+    h1 {
+        font-size: 15rem;
+    }
 
     /* About me section */
 
@@ -375,6 +380,22 @@ section#work p {
     #work .projects {
         grid-template-columns: 1fr 1fr 1fr;
         max-width: 65rem;
+    }
+
+    /* Work Section */
+
+    #work .projects {
+        max-width: 90rem;
+    }
+
+    .highlight5 {
+        display: block;
+    }
+
+    /* The Creative Timeline Section */
+
+    .year2022 p, .year2023 p {
+        font-size: 2rem;
     }
 }
 
