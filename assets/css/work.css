@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;700&display=swap');
+
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -8,161 +10,103 @@ body, h1, h2, h3, h4, h5, h6, p {
     cursor: crosshair;
 }
 
-img {
-    max-width: 100%;
+img, video {
+    width: 100%;
     display: block;
-}
-
-section {
-    padding: 3rem;
 }
 
 /* Hero Section */
 
-.hero {
-    padding: 0;
-    margin-top: 5.2rem;
-}
-
-.desktop {
-    display: none;
-}
-
-/* Work Section */
-
-.portfolio-text {
-    text-decoration: none;
-    color: black;
-    font-style: italic;
-    font-weight: bold;
-}
-
-.portfolio-text:hover {
-    text-decoration: underline;
-    color: #9FC131;
-}
-
 h1 {
-    padding-block: 2rem;
+    background-image: url(../img/projects/BasketballScoreboard-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    place-items: center;
+    min-height: 15rem;
+    width: 100%;
+    text-align: center;
     font-size: 2.5rem;
+    color: whitesmoke;
+    text-shadow: black 3px 3px;
+}
+
+
+/* Project description section */
+
+.project-desc {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding: 2rem 1.5rem;
 }
 
 h2 {
-    font-size: 0.8rem;
+    color: #70E000;
 }
 
-.project {
-    background-color: #ECECEC;
+.project-desc p {
+    color: whitesmoke;
+    padding-block: 1rem 2.5rem;
+    font-size: .8rem;
 }
 
-.project p {
-    text-align: justify;
-    font-weight: 300;
-    line-height: 1.5rem;
-}
-
-.flex {
-    display: flex;
-    justify-content: space-between;
-    padding-block: 2.5rem;
-
-}
-
-.flex h3:nth-child(1) {
-    font-weight: 200;
-    font-size: 1rem;
-}
-
-.flex a {
-    color: black;
+.project-desc a {
+    color: whitesmoke;
+    font-size: .9rem;
     font-weight: bold;
 }
 
-.project img {
-    margin: 2rem auto 0;
-}
-
-.work-description p{
-    padding-block: 2rem;
-}
-
-.work-description p:first-child {
+.project-desc a:nth-last-child(1) {
     padding-top: 2rem;
 }
 
-.work-description p:nth-last-child(1) {
+/* Process Section */
+
+.process {
+    padding-block: 2.5rem;
+    background-color: black;
+}
+
+h3 {
+    color: #70E000;
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.process p {
+    padding: 0 1.5rem 1.5rem;
+    color: whitesmoke;
+    font-size: .8rem;
+    line-height: 1.3rem;
+    text-align: justify;
+    font-weight: 200;
+}
+
+.process p:nth-last-child(1) {
     padding-bottom: 0;
 }
 
-.work-description a {
-    text-decoration: none;
+/* Design Section */
+
+.design {
+    padding-block: 2.5rem;
+    background-color: whitesmoke;
+}
+
+.design p {
+    padding: 0 1.5rem 1.5rem;
     color: black;
-    font-weight: bold;
-    font-style: italic;
+    font-size: .8rem;
+    line-height: 1.3rem;
+    text-align: justify;
 }
 
-.work-description a:hover {
-    color: #9FC131;
-    text-decoration: underline;
+.design img + img {
+    padding-top: 2rem;
 }
 
-.project video {
-    display: none;   
-}
-
-@media ( min-width: 601px ) {
-
-    .mobile {
-        display: none;
-    }
-
-    .desktop {
-        display: block;
-        width: 100%;
-    }
-}
-
-@media ( min-width: 850px ) {
-    .work--flex {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .work--flex .col1 {
-        padding-right: 5rem;
-        min-width: 25rem;
-    }
-
-    .work--flex .col2 {
-        max-width: 50rem;
-    }
-
-    .project img {
-        min-width: 60%;
-        max-width: 50rem;
-    }
-
-    .project p {
-        padding-top: 2rem;
-    }
-
-    .work-description {
-        max-width: 60rem;
-        margin: 0 auto;
-    }
-
-    .project .container video {
-        display: block;
-        max-width: 90%;
-        margin: 4rem auto 0;
-        max-height: 40rem;
-    }
-
-    .project .container .portfolio-video {
-        margin-bottom: 4rem;
-    }
-
-    .portfolio-image-hide {
-        display: none;
-    }
+video {
+    padding-top: 2rem;
 }
