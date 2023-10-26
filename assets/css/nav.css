@@ -32,7 +32,7 @@ li + li {
     text-decoration: none;
     font-weight: bold;
     color: black;
-    font-size: .7rem;
+    font-size: .8rem;
 }
 
 .nav ul li a::after {
@@ -50,7 +50,7 @@ li + li {
   
   .nav ul li a:hover {
     transform: translateY(-2px);
-    font-weight: 300;
+    font-weight: bold;
   }
   
   .nav ul li a:hover::after {
@@ -63,5 +63,5 @@ li + li {
     font-weight: bold;
     text-decoration: none;
     cursor: pointer;
-    font-size: .7rem;
+    font-size: .8rem;
 }

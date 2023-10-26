@@ -354,11 +354,11 @@ section#work p {
      /* Hero section */
 
     .hero {
-        min-height: 35rem;
+        min-height: 37rem;
     }
 
     h1 {
-        font-size: 15rem;
+        font-size: 12rem;
     }
 
     /* About me section */
