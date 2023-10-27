@@ -91,7 +91,7 @@ h3 {
 /* Design Section */
 
 .design {
-    padding-block: 2.5rem;
+    padding-block: 2.5rem 0;
     background-color: whitesmoke;
 }
 
@@ -103,10 +103,30 @@ h3 {
     text-align: justify;
 }
 
+.design img {
+    padding-inline: 1.5rem;
+}
+
 .design img + img {
     padding-top: 2rem;
 }
 
 video {
     padding-top: 2rem;
+}
+
+/* The Challenge Section */
+
+.challenge {
+    padding-block: 2.5rem;
+    background-color: black;
+}
+
+.challenge p {
+    padding: 0 1.5rem 1.5rem;
+    color: whitesmoke;
+    font-size: .8rem;
+    line-height: 1.3rem;
+    text-align: justify;
+    font-weight: 200;
 }
