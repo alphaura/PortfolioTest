@@ -34,7 +34,7 @@ h1 {
 
 /* Project description section */
 
-.project-desc {
+.project-info {
     display: flex;
     flex-direction: column;
     background-color: black;
@@ -45,19 +45,19 @@ h2 {
     color: #70E000;
 }
 
-.project-desc p {
+.project-info p {
     color: whitesmoke;
     padding-block: 1rem 2.5rem;
     font-size: .8rem;
 }
 
-.project-desc a {
+.project-info a {
     color: whitesmoke;
     font-size: .9rem;
     font-weight: bold;
 }
 
-.project-desc a:nth-last-child(1) {
+.project-info a:nth-last-child(1) {
     padding-top: 2rem;
 }
 
@@ -105,6 +105,8 @@ h3 {
 
 .design img {
     padding-inline: 1.5rem;
+    margin: 0 auto;
+    max-width: 30rem;
 }
 
 .design img + img {
@@ -129,4 +131,82 @@ video {
     line-height: 1.3rem;
     text-align: justify;
     font-weight: 200;
+}
+
+/* Tablet Size */
+
+@media ( min-width: 768px ) {
+
+    /* Project description section */
+
+    .project-info {
+        display: grid;
+        justify-tracks: start;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "title lang" "desc desc" "figma demo";
+        place-items: center;
+        justify-items: flex-start;
+        padding-inline: 5rem;
+    }
+
+    .project-desc {
+        grid-area: desc;
+        display: flex;
+    }
+
+    .project-desc p {
+        padding: 0;
+        padding-left: 10rem;
+    }
+
+    .project-info a:nth-last-child(1) {
+        padding: 0;
+    }
+
+    /* Process, Design, Challenge Section */
+
+    .process, .challenge {
+        padding-block: 5rem;
+    }
+
+    .process p, .design p, .challenge p {
+        max-width: 40rem;
+        margin: 0 auto;
+    }
+
+    /* Design Section */
+
+    .design p {
+        padding-bottom: 3rem;
+    }
+
+    .design-imgs {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2.5rem 0;
+    }
+
+   .design img + img {
+    padding-top: 0;
+   }
+}
+
+@media ( min-width: 1000px ) {
+    
+    .project-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "title lang desc" "figma demo .";
+        justify-items: flex-start;
+    }
+
+    .project-desc {
+        flex-direction: column;
+    }
+
+    .project-desc p {
+        padding-block: 1rem .5rem;
+    }
 }
