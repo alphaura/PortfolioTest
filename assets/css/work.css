@@ -17,14 +17,16 @@ img, video {
 
 /* Hero Section */
 
-h1 {
+.hero {
+    min-height: 20rem;
     background-image: url(../img/projects/BasketballScoreboard-bg.jpg);
     background-size: cover;
     background-position: center;
     display: grid;
     place-items: center;
-    min-height: 15rem;
-    width: 100%;
+}
+
+h1 {  
     text-align: center;
     font-size: 2.5rem;
     color: whitesmoke;
@@ -157,7 +159,8 @@ video {
 
     .project-desc p {
         padding: 0;
-        padding-left: 10rem;
+        padding-left: 4rem;
+        max-width: 25rem;
     }
 
     .project-info a:nth-last-child(1) {
