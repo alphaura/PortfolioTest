@@ -9,6 +9,18 @@
     justify-content: space-between;
 }
 
+.projects-bg {
+    background-color: black;
+}
+
+.projects-nav a {
+    color: whitesmoke;
+}
+
+.main-nav a {
+    color: black;
+}
+
 .nav ul {
     padding: 0;
     margin: 0;
@@ -31,7 +43,6 @@ li + li {
     transition: transform 0.3s ease-out;
     text-decoration: none;
     font-weight: bold;
-    color: black;
     font-size: .8rem;
 }
 
@@ -59,7 +70,6 @@ li + li {
 
 .navLogo {
     align-self: flex-start;
-    color: black;
     font-weight: bold;
     text-decoration: none;
     cursor: pointer;

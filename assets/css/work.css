@@ -139,11 +139,16 @@ video {
 
 @media ( min-width: 768px ) {
 
+    /* Hero Section */
+
+    .hero {
+        min-height: 30rem;
+    }
+
     /* Project description section */
 
     .project-info {
         display: grid;
-        justify-tracks: start;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-areas: "title lang" "desc desc" "figma demo";
