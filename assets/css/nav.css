@@ -1,5 +1,5 @@
 .nav {
-    padding: 1rem 1.5rem;
+    padding: 2rem 1.5rem;
     background: whitesmoke;
     backdrop-filter: blur(1px);
 }
@@ -74,4 +74,15 @@ li + li {
     text-decoration: none;
     cursor: pointer;
     font-size: .8rem;
+}
+
+@media ( min-width: 768px ) {
+    .nav-flex a, .nav ul li a {
+        font-size: 1rem;
+    }
+
+}
+
+@media ( min-width: 1000px ) {
+
 }
