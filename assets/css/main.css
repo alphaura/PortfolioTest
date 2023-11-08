@@ -20,12 +20,37 @@ img {
 .hero {
     background-color: whitesmoke;
     color: black;
+    overflow: hidden;
 }
 
 h1 {
     text-align: center;
     padding-block: 4rem;
     font-size: 4rem;
+    -webkit-animation: slideTop 1.5s ease;
+            animation: slideTop 1.5s ease;
+}
+
+@-webkit-keyframes slideTop {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    } 
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideTop {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    } 
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 h6 {
@@ -37,6 +62,14 @@ h6 {
 /* Tech n tools section, making them all sized the same and flexible */
 
 @media ( max-width: 700px) {
+    @-webkit-keyframes slide {
+        from {
+            transform: translateX(0);
+        }to {
+            transform: translateX(-100%);
+        }
+        
+    }
     @keyframes slide {
         from {
             transform: translateX(0);
@@ -52,12 +85,15 @@ h6 {
     }
     
     .logos:hover .logos-slide,.logos:hover .logos-slide2 {
-        animation-play-state: paused;
+        -webkit-animation-play-state: paused;
+                animation-play-state: paused;
     }
     
     .logos-slide, .logos-slide2 {
         display: flex;
-        animation: 10s slide infinite linear;
+        -webkit-animation: 10s slide infinite linear;
+                animation: 10s slide infinite linear;
+
     }
     
     .logos-slide > div, .logos-slide2 > div {
@@ -224,7 +260,7 @@ section#work p {
     }
 
     
-    .hero h1 {
+    /* .hero h1 {
         -webkit-animation: water-effect 3s infinite ease-in-out;
         animation: water-effect 3s infinite ease-in-out;
     }
@@ -249,7 +285,7 @@ section#work p {
         100% {
             transform: translateY(0);
         }
-    }
+    } */
 
     h6 {
         font-size: .55rem;
