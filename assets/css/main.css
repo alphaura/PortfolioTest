@@ -217,6 +217,19 @@ section#work p {
 .projects img {
     border-radius: 1rem;
     margin: 0 auto 2rem;
+    transition: .5s ease-in-out;
+}
+
+
+.projects img:hover {
+    box-shadow:
+    rgba(0,0,0,0.1) 0 2px 2px,
+    rgba(0,0,0,0.1) 0 4px 4px,
+    rgba(0,0,0,0.1) 0 8px 8px,
+    rgba(0,0,0,0.1) 0 16px 16px,
+    rgba(0,0,0,0.1) 0 32px 32px,
+    rgba(0,0,0,0.1) 0 64px 64px;
+    transition: .5s ease-in-out;
 }
 
 
@@ -239,7 +252,6 @@ section#work p {
     padding: 3rem 1.5rem;
     font-size: 1.2rem;
     font-weight: bold;
-    /* border-block: 1px solid whitesmoke; */
 }
 
 #timeline hr {
@@ -265,6 +277,40 @@ section#work p {
 
 .achieve-2023 p + p {
     padding-top: 1rem;
+}
+
+/* Animate the text coming from the left side once scrolled in viewport */
+
+.text {
+    overflow: hidden;
+}
+
+.animate {
+    animation: slideLeft 1s ease both;
+    animation-play-state: paused;
+}
+
+.delay1 {
+    animation-delay: 0.5s; /* Add a 0.5s delay */
+}
+
+.delay2 {
+    animation-delay: 0.7s; /* Add a 1s delay */
+}
+
+.delay3 {
+    animation-delay: 0.9s; /* Add a 1.5s delay */
+}
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 
@@ -397,7 +443,7 @@ section#work p {
 
     /* WORK section */
 
-    #work .projects {
+    .projects {
         display: grid;
         grid-template-columns: 1fr 1fr;
         padding-top: 2rem;
