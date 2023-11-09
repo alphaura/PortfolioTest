@@ -15,6 +15,14 @@ img, video {
     display: block;
 }
 
+/* Spacer between nav and hero */
+
+.spacer {
+    width: 100%;
+    min-height: 9.5rem;
+    background-color: black;
+}
+
 /* Hero Section */
 
 .hero {
@@ -233,6 +241,12 @@ video {
 /* Tablet Size */
 
 @media ( min-width: 768px ) {
+
+    /* Spacer between nav and hero */
+
+    .spacer {
+        min-height: 5.5rem;
+    }
 
     /* Hero Section */
 
