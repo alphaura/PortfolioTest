@@ -123,6 +123,13 @@ h6 {
     color: whitesmoke;
 }
 
+.about .container {
+    max-width: 90rem;
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+}
+
 section.about, section#work {
     padding: 1.5rem;
 }
@@ -146,7 +153,7 @@ section.about h3 {
 }
 
 .about .container .col2 p {
-    margin-bottom: 0;
+    margin-bottom: 2rem;
 }
   
 
@@ -174,15 +181,36 @@ section#work p {
     text-decoration: none;
     color: black;
     font-weight: bold;
-    display: grid;
-    place-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 1.1rem;
     padding-bottom: 2rem;
+    margin: 0 auto;
+}
+
+.moreProjects span {
+    font-size: 1.2rem;
+    padding-left: .5rem;
+    width: 0;
+    overflow: hidden;
+    transition: .5s ease;
+}
+
+.moreProjects:hover span {
+    width: 3rem;
+}
+
+.moreProjects:hover::after {
+    display: inline;
+    transition: 1s ease-in-out;
+
 }
 
 .projects {
     max-width: 20rem;
     margin: 0 auto;
+    padding-top: 2rem;
 }
 
 .projects img {
@@ -197,17 +225,17 @@ section#work p {
     color: whitesmoke;
     background-color: black;
 }
-  
+
 #timeline h2 {
     color: #70E000;
     font-size: 2.5rem;
-    padding: 1.5rem 1.5rem 0;
+    padding: 3rem 1.5rem;
     text-align: center;
 }
 
 .year2022 {
     display: flex;
-    padding: 2rem 1.5rem;
+    padding: 3rem 1.5rem;
     font-size: 1.2rem;
     font-weight: bold;
     /* border-block: 1px solid whitesmoke; */
@@ -223,15 +251,11 @@ section#work p {
     display: flex;
     font-size: 1.2rem;
     font-weight: bold;
-    padding: 2rem 1.5rem;
+    padding: 3rem 1.5rem;
 }
 
 .year2022, .year2023 {
     justify-content: space-around;
-}
-
-.year2022 p:nth-child(1), .year2023 p:nth-child(1){
-    padding-right: 2rem;
 }
 
 .achieve-2023 p:nth-child(1) {
@@ -422,6 +446,7 @@ section#work p {
 
     #work .projects {
         max-width: 90rem;
+        padding-inline: 2rem;
     }
 
     .highlight5 {
