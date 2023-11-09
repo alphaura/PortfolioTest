@@ -21,6 +21,7 @@ img {
     background-color: whitesmoke;
     color: black;
     overflow: hidden;
+    padding-top: 7rem;
 }
 
 h1 {
@@ -318,6 +319,7 @@ section#work p {
 
     .logos {
         display: flex;
+        padding-bottom: 4rem;
     }
 
     .logos-slide {
