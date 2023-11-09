@@ -279,41 +279,6 @@ section#work p {
     padding-top: 1rem;
 }
 
-/* Animate the text coming from the left side once scrolled in viewport */
-
-.text {
-    overflow: hidden;
-}
-
-.animate {
-    animation: slideLeft 1s ease both;
-    animation-play-state: paused;
-}
-
-.delay1 {
-    animation-delay: 0.5s; /* Add a 0.5s delay */
-}
-
-.delay2 {
-    animation-delay: 0.7s; /* Add a 1s delay */
-}
-
-.delay3 {
-    animation-delay: 0.9s; /* Add a 1.5s delay */
-}
-
-@keyframes slideLeft {
-    from {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-
 /* Media queries for larger screen sizes then 700px */
 
 
@@ -454,6 +419,41 @@ section#work p {
     .moreProjects {
         font-size: 2rem;
     }
+
+    /* Animate the text coming from the left side once scrolled in viewport */
+
+    .text {
+        overflow: hidden;
+    }
+
+    .animate {
+        animation: slideLeft 1s ease both;
+        animation-play-state: paused;
+    }
+
+    .delay1 {
+        animation-delay: 0.5s; /* Add a 0.5s delay */
+    }
+
+    .delay2 {
+        animation-delay: 0.7s; /* Add a 1s delay */
+    }
+
+    .delay3 {
+        animation-delay: 0.9s; /* Add a 1.5s delay */
+    }
+
+    @keyframes slideLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
     
 }
 
