@@ -20,10 +20,10 @@
     <!-- Navigation bar -->
 
     <header>
-        <div class="nav">
+        <div class="nav projects-bg">
             <div class="container">
                 <nav>
-                    <div class="nav-flex">
+                    <div class="nav-flex projects-nav">
                         <a href="../../../index.html" class="navLogo">Front-End Developer</a>
                         <ul>
                             <li><a href="../../../index.html">Home</a></li>
@@ -35,11 +35,12 @@
             </div>
         </div>
 
+        <div class="spacer"></div>
+
     <!-- Hero Section -->
 
-        <div class="hero">
-            <img src="../../img/projects/CRLMobileBanner.png" alt="A landing page project from a 21 day challenge for responsive design" class="mobile">
-            <img src="../../img/projects/ResponsiveLayoutsBanner.png" alt="A landing page project from a 21 day challenge for responsive design" class="desktop">
+        <div class="hero crl-hero">
+            <h1>Responsive Site</h1>
         </div>
     </header>
 
@@ -47,32 +48,82 @@
 
     <main>
         <section class="project">
-            <div class="container">
-                <h2>WORK</h2>
-                <div class="work--flex">
-                    <div class="col1">
-                        <h1>Responsive Site</h1>
-                    </div>
-                    <div class="col2">
-                        <p>This was the final project of a 21-day course I completed, which required the creation of a fully responsive site following a design
-                           provided by the educator.</p>
-                        <div class="flex">
-                            <h3>HTML & CSS</h3>
-                            <a href="https://alphaura.github.io/CRL-final-site/" target="_blank">Live Demo</a>
+
+            <!-- Project description section -->
+
+           <div class="container-info">
+               <div class="project-info">
+                        <div class="project-title">
+                            <h2>NAME OF PROJECT</h2>
+                            <p>Responsive Site</p>
                         </div>
-                    </div>
-                </div>
-                <hr>
-                <img src="../../img/projects/crlsitepreviewimg.png" alt="Preview image of the project">
-                <div class="work-description">
-                    <p>The main goal of this project was to develop the final design provided into an actual fully responsive site. I was provided with the
-                        full specs of the font-sizing, assets, how it should look like in desktop, medium and mobile-size devices.</p>
-                    <p>In this project I have mostly used `flex-box` and `media-queries` in order to play with the content resizing and responsiveness on the different
-                        device sizes, due to mainly being what I have mostly learned throughout this course, as it was based on the understanding of the
-                        importance of responsive design, mobile-first mindset, flex-box, and media-queries.</p>
-                </div>
-                <video src="../../video/crlsitemov.mp4" autoplay="autoplay" loop="loop" aria-label="Video showcasing the site responsiveness"></video>
-            </div>
+                        <div class="project-lang">
+                            <h2>LANGUAGES USED</h2>
+                            <p>HTM & CSS</p>
+                        </div>
+                        <div class="project-desc">
+                            <h2>DESCRIPTION</h2>
+                            <p>This was the final project of a 21-day course I completed, which required the creation of a fully responsive landing page following a design provided by the educator.</p>
+                        </div>
+                        <a href="https://courses.kevinpowell.co/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBMnNTRlE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--80496d5e2fc3765966defb557cbe015671e38c50/final-challenge-specs.pdf?disposition=attachment" class="figma design-specs" target="_blank">VIEW DESIGN ↗</a>
+                        <a href="https://alphaura.github.io/CRL-final-site/" class="demo" target="_blank">VIEW PROJECT ↗</a>
+               </div>
+           </div>
+
+           <!-- Project photo -->
+
+           <div class="project-preview crl-mock">
+           </div>
+
+           <!-- Process section -->
+
+           <div class="process">
+                <h3>The Process</h3>
+                <p>The goal of this project was to put all the information learned from this course into action by developing the landing page design provided by the educator. The course
+                    was focused on responsiveness and was also introduced to Flexbox and media queries.</p>
+
+                <p>Gaining the new found knowledge of what is responsive design and its importance, I can say, that this project was the beginning that made one of my main focuses of a site/project
+                    to be user friendly and responsiveness. Having the design all set by the educator, I had to simply follow the specs and create the landing page using the flexbox method and media
+                    queries as needed.</p>
+           </div>
+
+           <!-- Design Section -->
+
+           <div class="design">
+               <h3>The Design</h3>
+
+               <p>The design was provided by Kevin Powell, which was the educator and creator of this course. The design specs showed how the design should be, font sizes, colours, and also
+                  break points for the media queries. This information helped in replicating the landing page and also work on specs provided externally which showcases my understanding
+                  in working on projects provided by others.</p>
+
+               <!-- <p>TEXT</p> -->
+
+                <!-- <div class="design-imgs">
+                    <img src="../../img/projects/BasketballScoreboardImg1.png" alt="Preview of the project" class="design-img-1" loading="lazy">
+                    <img src="../../img/projects/BasketballScoreboardImg2.png" alt="" class="design-img-2" loading="lazy">
+                    <img src="../../img/projects/BasketballScoreboard.designMobile.png" alt="" class="design-img-3" loading="lazy">
+                    <img src="../../img/projects/BasketballScoreboard.designMobile.png" alt="" class="design-img-4" loading="lazy">
+                </div> -->
+
+                <img src="../../img/projects/crlsitepreviewimg.png" alt="Preview of the project" class="solo-img" loading="lazy">
+
+           </div>
+
+           <!-- The Challenge Section -->
+
+           <div class="challenge">
+                <h3>The Challenge</h3>
+                <p>The main challenge I found on this project was on understanding how content moves when using flexbox, and the corelation with media queries. Whenever I felt stuck, 
+                    I revisited the previous lessons, found the issue, fixed it and continued coding. Once I got a hang on how the responsiveness works, I got into a flow of simply, flexing
+                    the content in conjunction with the proper breakpoints.
+                </p>
+           </div>
+
+           <div class="video">
+               <video src="../../video/crlsitemov.mp4" autoplay loop></video>
+           </div>
+
+
         </section>
     </main>
 
@@ -96,3 +147,6 @@
         </div>
     </footer>
 
+    <script src="../../../index.js" defer></script>
+</body>
+</html>

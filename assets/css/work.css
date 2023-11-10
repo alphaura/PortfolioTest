@@ -23,15 +23,22 @@ img, video {
     background-color: black;
 }
 
-/* Hero Section */
+/* Hero Section + Projects background image */
 
 .hero {
     min-height: 20rem;
-    background-image: url(../img/projects/BasketballScoreboard-bg.jpg);
     background-size: cover;
     background-position: center;
     display: grid;
     place-items: center;
+}
+
+.bball-hero {
+    background-image: url(../img/projects/BasketballScoreboard-bg.jpg);
+}
+
+.crl-hero {
+    background-image: url(../img/projects/crl-bg.jpg);
 }
 
 h1 {  
@@ -128,6 +135,10 @@ h2 {
     transform-origin: left;
     transition: transform 0.3s ease-in-out;
   }
+
+  .design-specs::after {
+    width: 7rem;
+  }
   
   .figma:hover {
     transform: translateY(-2px);
@@ -143,10 +154,17 @@ h2 {
 /* Project preview img */
 
 .project-preview {
-    background-image: url(../img/projects/BasketballScoreboard-preview.png);
     background-size: cover;
     background-position: center;
     min-height: 20rem;
+}
+
+.bball-mock {
+    background-image: url(../img/projects/BasketballScoreboard-preview.png);
+}
+
+.crl-mock {
+    background-image: url(../img/projects/CRLMockup.png);
 }
 
 /* Process Section */
@@ -432,6 +450,10 @@ video {
 
       .figma::after {
         width: 11rem;
+      }
+
+      .design-specs::after {
+        width: 8rem;
       }
 
     /* Project preview img */
