@@ -41,6 +41,10 @@ img, video {
     background-image: url(../img/projects/crl-bg.jpg);
 }
 
+.cs-hero {
+    background-image: url(../img/projects/cs-bg.jpg);
+}
+
 h1 {  
     text-align: center;
     font-size: 2.5rem;
@@ -79,6 +83,10 @@ h2 {
 
 .demo {
     padding-top: 3rem;
+}
+
+.project-info .only-demo {
+    padding: 0;
 }
 
 @media ( max-width: 765px) {
@@ -165,6 +173,10 @@ h2 {
 
 .crl-mock {
     background-image: url(../img/projects/CRLMockup.png);
+}
+
+.cs-mock {
+    background-image: url(../img/projects/CSMockup.png);
 }
 
 /* Process Section */
@@ -325,6 +337,12 @@ video {
         text-align: right;
     }
 
+    .project-info .only-demo {
+        grid-area: demo;
+        justify-self: flex-end;
+        align-self: flex-end;
+    }
+
     .demo {
         position: relative;
         display: inline-block;
@@ -400,9 +418,13 @@ video {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        grid-template-areas: "title lang desc" "figma demo .";
+        grid-template-areas: "title lang desc" "figma demo . ";
         max-width: 70rem;
         margin: 0 auto;
+    }
+
+    .project-info .only-demo {
+        grid-area: figma;
     }
 
     .project-desc {
