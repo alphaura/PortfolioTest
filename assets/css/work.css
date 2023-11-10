@@ -197,6 +197,11 @@ h3 {
     max-width: 30rem;
 }
 
+.design .solo-img {
+    padding-bottom: 2rem;
+    max-width: 50rem;
+}
+
 .design img + img {
     padding-top: 2rem;
 }
@@ -204,7 +209,6 @@ h3 {
 .design-imgs {
     padding-bottom: 2rem;
 }
-
 
 
 /* The Challenge Section */
