@@ -20,10 +20,10 @@
     <!-- Navigation bar -->
 
     <header>
-        <div class="nav">
+        <div class="nav projects-bg">
             <div class="container">
                 <nav>
-                    <div class="nav-flex">
+                    <div class="nav-flex projects-nav">
                         <a href="../../../index.html" class="navLogo">Front-End Developer</a>
                         <ul>
                             <li><a href="../../../index.html">Home</a></li>
@@ -35,11 +35,12 @@
             </div>
         </div>
 
+        <div class="spacer"></div>
+
     <!-- Hero Section -->
 
-        <div class="hero">
-            <img src="../../img/projects/hitCounterMobileBanner.png" alt="A landing page on how I created my portfolio-2.0" class="mobile">
-            <img src="../../img/projects/hitCounterBannerDesktop.png" alt="A landing page on how I created my portfolio-2.0" class="desktop">
+        <div class="hero hitCounter-hero">
+            <h1>Hit Counter</h1>
         </div>
     </header>
 
@@ -47,34 +48,84 @@
 
     <main>
         <section class="project">
-            <div class="container">
-                <h2>WORK</h2>
-                <div class="work--flex">
-                    <div class="col1">
-                        <h1>Hit Counter</h1>
-                    </div>
-                    <div class="col2">
-                        <p>First project with the focus on JavaScript implementation, of a working hit counter for paintball</p>
-                        <div class="flex">
-                            <h3>HTML, CSS & JavaScript</h3>
-                            <a href="https://hitcounter.netlify.app/" target="_blank">Live Demo</a>
+
+            <!-- Project description section -->
+
+           <div class="container-info">
+               <div class="project-info">
+                        <div class="project-title">
+                            <h2>NAME OF PROJECT</h2>
+                            <p>Hit Counter</p>
                         </div>
-                    </div>
-                </div>
-                <hr>
-                <img src="../../img/projects/hitCounterpreviewimg.png" alt="Preview image of the project design">
-                <div class="work-description">
-                    <p>My very first JavaScript focused project. In a previous course that I have done, we only brushed on JavaScript which was enough
-                        to get a decent grasp of some of the basic fundamentals, however, I wanted to delve into this language, in order to complete 
-                        the fundamental stack for web development.
-                    </p>
-                    <p>This project was created as part of the <a href="https://scrimba.com/" class="scrimba" target="_blank">Scrimba</a> course that I'm doing. While the JavaScript itself is very basic
-                       it was a very good starter as it allowed me to understand a bit more how this language is connected with HTML. Having responsiveness
-                       on top of mind, I decided to restructure the HTML provided in the course, to make the whole project responsive and played a bit
-                       with the good old friend flex-box.</p>
-                </div>
-                <video src="../../video/hitCounter.mov.mp4" autoplay="autoplay" loop="loop" aria-label="Video showcasing the site responsiveness"></video>
-            </div>
+                        <div class="project-lang">
+                            <h2>LANGUAGES USED</h2>
+                            <p>HTML, CSS & JavaScript</p>
+                        </div>
+                        <div class="project-desc">
+                            <h2>DESCRIPTION</h2>
+                            <p>Follow along project with the focus and understanding of JavaScript implementation, making a working hit counter for paintball</p>
+                        </div>
+                        <a href="https://alphaura.github.io/Amaz1ngCas1noReplies/" class="demo only-demo" target="_blank">VIEW PROJECT ↗</a>
+               </div>
+           </div>
+
+           <!-- Project photo -->
+
+           <div class="project-preview cs-mock">
+           </div>
+
+           <!-- Process section -->
+
+           <div class="process">
+                <h3>The Process</h3>
+                <p>Back in 2021, I started my very first job in iGaming. It was interesting to learn about the use of canned replies/hotkeys because I had never used them before in previous jobs. 
+                    While the concept was very interesting the way we used them wasn't that efficient, or at least that was my opinion, and of another colleague, so we decided to work on 
+                    something for ourselves to then show to the management.</p>
+
+                <p>Back then, I had no idea what I was doing. I remember that we used CodePen to do it, and that I was learning as we were working on it. Therefore, now I wanted to re-create 
+                    the whole thing by myself, having that I have more understanding than before.The idea behind this project was to make our replies faster and efficient. 
+                    With this company we were mostly using a word document with replies, highlighting, copy and then pasting in the chat (not that efficient) or the actual 
+                    system itself which still wasn't as quick as I would have liked it to be.</p>
+           </div>
+
+           <!-- Design Section -->
+
+           <div class="design">
+               <h3>The Design</h3>
+
+               <p>We used the same canned replies so that we still follow the company's procedures but created a more ideal way in having a single button, that with one click, it is 
+                copied and we can simply paste it in the chat, which had made our process of getting the answer and replying to the customer much faster and better. For this specific project, 
+                I used ChatGPT to tailor iGaming replies used by CS agents exclusively for my yet to be launched Amaz1ng Cas1no site. I then searched for the copy to clipboard snippet and 
+                after understanding the JS snippet and how it was working, I then adjusted the code in order to function how I wanted it to work.</p>
+
+               <p>For the look and feel of this project, I mostly coded it in my free time at work on CodePen, so I don't have a design file or design specs, mostly on the go design.</p>
+
+                <!-- <div class="design-imgs">
+                    <img src="../../img/projects/BasketballScoreboardImg1.png" alt="Preview of the project" class="design-img-1" loading="lazy">
+                    <img src="../../img/projects/BasketballScoreboardImg2.png" alt="" class="design-img-2" loading="lazy">
+                    <img src="../../img/projects/BasketballScoreboard.designMobile.png" alt="" class="design-img-3" loading="lazy">
+                    <img src="../../img/projects/BasketballScoreboard.designMobile.png" alt="" class="design-img-4" loading="lazy">
+                </div> -->
+
+                <img src="../../img/projects/csCannedpreviewimg.png" alt="Preview of the project" class="solo-img" loading="lazy">
+
+           </div>
+
+           <!-- The Challenge Section -->
+
+           <div class="challenge">
+                <h3>The Challenge</h3>
+                <p>At the time I worked on this project, responsiveness was still very fresh and I didn't know much about JavaScript, however, I still worked my way in finding the answer
+                    to how I can get the text copied to clipboard with one click and also worked on the functionality and responsiveness of the project, in order to be used for a customer 
+                    support agent keeping the window in a small portion of the screen as demonstrated below.
+                </p>
+           </div>
+
+           <div class="video">
+               <video src="../../video/hitCounter.mov.mp4" autoplay loop></video>
+           </div>
+
+
         </section>
     </main>
 
@@ -98,3 +149,6 @@
         </div>
     </footer>
 
+    <script src="../../../index.js" defer></script>
+</body>
+</html>
