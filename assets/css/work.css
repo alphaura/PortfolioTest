@@ -49,6 +49,10 @@ img, video {
     background-image: url(../img/projects/hitCounter/hitCounter-bg.jpg);
 }
 
+.portfolio-hero {
+    background-image: url(../img/projects/portfolio2.0/portfolio-bg.jpg);
+}
+
 h1 {  
     text-align: center;
     font-size: 2.5rem;
@@ -187,6 +191,10 @@ h2 {
     background-image: url(../img/projects/hitCounter/hitCounterMockup.png);
 }
 
+.portfolio-mock {
+    background-image: url(../img/projects/portfolio2.0/portfolioMockup.png);
+}
+
 /* Process Section */
 
 .process {
@@ -241,6 +249,10 @@ h3 {
     text-align: justify;
 }
 
+.design p:last-child {
+    padding-bottom: 3rem;
+}
+
 .design img {
     padding-inline: 1.5rem;
     margin: 0 auto;
@@ -275,6 +287,10 @@ h3 {
     line-height: 1.3rem;
     text-align: justify;
     font-weight: 200;
+}
+
+.challenge p + p {
+    padding-top: 1.5rem;
 }
 
 /* Video section */
@@ -415,10 +431,6 @@ video {
 
     /* Design Section */
 
-    .design p {
-        padding-bottom: 3rem;
-    }
-
     .design-imgs {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -539,7 +551,7 @@ video {
     .design-img-1 {
         grid-area: img1;
         min-height: 15rem;
-
+        min-width: 50rem;
     }
 
     .design-img-2 {

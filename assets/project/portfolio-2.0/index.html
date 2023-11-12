@@ -10,7 +10,13 @@
     <link rel="stylesheet" href="../../css/work.css">
     <link rel="stylesheet" href="../../css/footer.css">
     <link rel="stylesheet" href="../../css/nav.css">
-    <link rel="icon" href="#">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../img/favicon.ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../img/favicon.ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../img/favicon.ico/favicon-16x16.png">
+    <link rel="manifest" href="../../img/favicon.ico/site.webmanifest">
+    <link rel="mask-icon" href="../../img/favicon.ico/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;700&display=swap" rel="stylesheet">
@@ -20,10 +26,10 @@
     <!-- Navigation bar -->
 
     <header>
-        <div class="nav">
+        <div class="nav projects-bg">
             <div class="container">
                 <nav>
-                    <div class="nav-flex">
+                    <div class="nav-flex projects-nav">
                         <a href="../../../index.html" class="navLogo">Front-End Developer</a>
                         <ul>
                             <li><a href="../../../index.html">Home</a></li>
@@ -35,11 +41,12 @@
             </div>
         </div>
 
+        <div class="spacer"></div>
+
     <!-- Hero Section -->
 
-        <div class="hero">
-            <img src="../../img/projects/PortfolioMobileBanner.png" alt="A landing page on how I created my portfolio-2.0" class="mobile">
-            <img src="../../img/projects/PortfolioBannerDesktop.png" alt="A landing page on how I created my portfolio-2.0" class="desktop">
+        <div class="hero portfolio-hero">
+            <h1>Portfolio Look</h1>
         </div>
     </header>
 
@@ -47,45 +54,94 @@
 
     <main>
         <section class="project">
-            <div class="container">
-                <h2>WORK</h2>
-                <div class="work--flex">
-                    <div class="col1">
-                        <h1>Portfolio - 2.0</h1>
-                    </div>
-                    <div class="col2">
-                        <p>Check out how I came up with creating my portfolio version 2.0, from the design aspect all the way to having it coded and
-                            finalized.
-                        </p>
-                        <div class="flex">
-                            <h3>HTML & CSS</h3>
+
+            <!-- Project description section -->
+
+           <div class="container-info">
+               <div class="project-info">
+                        <div class="project-title">
+                            <h2>NAME OF PROJECT</h2>
+                            <p>Portfolio Look</p>
                         </div>
-                    </div>
+                        <div class="project-lang">
+                            <h2>LANGUAGES USED</h2>
+                            <p>HTML, CSS & JavaScript</p>
+                        </div>
+                        <div class="project-desc">
+                            <h2>DESCRIPTION</h2>
+                            <p>Updated portfolio look for the end of 2023, flexing the new found knowledge of improved HTML structure, CSS use and JavaScript to make an improved, and more
+                                functional portfolio.</p>
+                        </div>
+                        <a href="https://kyle-magri-portfolio.framer.ai/" class="figma" target="_blank">VIEW FRAMER DESIGN ↗</a>
+                        <a href="https://alphaura.github.io/BasketballScoreboard/" class="demo" target="_blank">VIEW PROJECT ↗</a>
+               </div>
+           </div>
+
+           <!-- Project photo -->
+
+           <div class="project-preview portfolio-mock">
+           </div>
+
+           <!-- Process section -->
+
+           <div class="process">
+                <h3>The Process</h3>
+                <p>The want for consistent improvement is big for me, especially when it comes to showcasing my own work. I'm constantly looking for ways on how I can improve myself, and I
+                    wasn't fully vibing with my portfolio and how I was showcasing my work, therefore, I first searched for design tools as I wanted to have a better visual and functional way to
+                    showcase what I'm designing. I ended up using <a href="https://www.framer.com/" target="_blank">Framer</a> as a design tool, and once I was happy with the design 
+                    I then got on with updating my current portfolio.</p>
+
+                <p>I found multiple challenges in actually making my design come to life, but with persistence and a well searched solution, I managed to overcome my obstacles. I have googled,
+                    used YouTube and also ChatGPT to help me with code fixing, function implementation and also used it to understand some features of JavaScript more and why they were being used
+                    in that way, to further solidify my knowledge.</p>
+           </div>
+
+           <!-- Design Section -->
+
+           <div class="design">
+               <h3>The Design</h3>
+
+               <p>Whilst doing my search for new design tools I came across Webflow and also Framer. I have dabbled a bit in both, however, Framer took the W and ended up continuing using it for
+                  this project. Framer has a bunch of solid tools along with easy implementation of responsive design. I do think that there are many more features they can implement in order
+                  to have a bit more control on how one could actually design the project, however, with the current features Framer has, I managed to work well.</p>
+
+               <p>They also have an AI feature which helped me in get some design ideas and then tweaked and turned them in a way that make sense for me and for the vibe I wanted to go for. I did
+                  make external research as well to get design ideas, which has helped me tp finalise my portfolio look. The design itself is slightly different from the actual portfolio, mainly
+                  because I was struggling to implement the actual design I wanted to make, so as usual, on the go designing was done.</p>
+
+               <p>There are more features that I would like to implement, and also potentially improve the code itself, which all this will be done once I gain more knowledge and experience.</p>
+
+                <div class="design-imgs">
+                    <img src="../../img/projects/portfolio2.0/portfolioImg1.png" alt="Preview of the project" class="design-img-1" loading="lazy">
+                    <img src="../../img/projects/portfolio2.0/portfolioImg2.png" alt="Preview of the project" class="design-img-2" loading="lazy">
+                    <img src="../../img/projects/portfolio2.0/portfolioImg3.png" alt="Preview of the project" class="design-img-3" loading="lazy">
+                    <img src="../../img/projects/portfolio2.0/portfolioImg1.png" alt="Preview of the project" class="design-img-4" loading="lazy">
                 </div>
-                <hr>
-                <img src="../../img/projects/portfolio-figma-design.png" alt="Preview image of the project design">
-                <div class="work-description">
-                    <p>Having recently earned the <a href="https://www.credly.com/badges/11e73eb8-ad47-4477-a70a-15a7b575dfca" target="_blank" class="portfolio-text">Adobe Certified Professional in Web Authoring Using Adobe Dreamweaver</a>
-                    certification through <a href="https://icemalta.com/" target="_blank" class="portfolio-text">ICE Malta</a>, I wanted to re-vamp my portfolio site and showcase my skills
-                    as a web designer and a web developer by creating the initial design using a design tool which in this case was Figma, and then develop
-                    the actual design into a working responsive website.</p>
-                    <p>As one will be able to notice, some design areas aren't like how the portfolio is looking as I haven't yet found the answer to how I can 
-                        create what I want to, however, I found alternatives that are working just fine, in order to still have my portfolio responsive and looking
-                        slick. While it's not visible in the photo, I have also used the "comment" tool in Figma to provide more context to the design
-                        and of how I want it to work, should the content has some sort of functionality to it.
-                    </p>
-                    <img src="../../img/projects/portfolio-highlight.png" alt="Preview of the highlight of my choice" class="portfolio-image-hide">
-                    <video src="../../../assets/video/portfolioAnimation.mov.mp4" autoplay="autoplay" loop="loop" class="portfolio-video" aria-label="Video showcasing the project functionality"></video>
-                    <p>If I had to choose my most favourite part of the site so far, I would go with the homepage animation. With a good amount of research
-                        and some tweaks in the prompts I was giving to ChatGPT, I managed to find a way on how I can make the <em><strong>"languages and tools"</strong></em> section
-                        move from right to left automatically on a mobile device. While it's nothing extraordinary, I thought of making such animation in order not to
-                        over stack the display with all the content, and therefore, I made use the <em><strong>"invisible space"</strong></em>, or so I call it like that haha.
-                    </p>
-                    <p>I'm always seeking more knowledge, especially <em><strong>JavaScript and/or similar languages</strong></em> which by the time of this writing, I had 
-                        enrolled myself in a Scrimba course of JavaScript, in order to improve my portfolio itself and also the future projects that I will be working on.
-                        If you have any suggestions, tips or opinions, feel free to share them with me, I'd be happy to look into them and discuss them with you! </p>
-                </div>
-            </div>
+
+                <!-- <img src="../../img/projects/basketballScoreboard/BasketballScoreboardImg1.png" alt="Preview of the project" class="solo-img" loading="lazy"> -->
+
+           </div>
+
+           <!-- The Challenge Section -->
+
+           <div class="challenge">
+                <h3>The Challenge</h3>
+                <p>Having that I updated the whole look and feel, and also improved the actual project showcase text and design, I pretty much had to re-do all pages which was quite of a challenge
+                    for me, yet also very interesting as it gave the opportunity to re-do previous code, read it, understand it once again and make the needed changes. For the CSS file of the project showcase,
+                    I decided to start it from fresh, as the design structure was very different than the previous design.</p>
+                
+                <p>I wanted to have a few features which I thought were only possible with JavaScript, however, with some research I found some videos and blogs were it actually showed that the
+                    features could be done with CSS. So I have tested some possible designs on CodePen, and then implemented the actual feature to the project.</p>
+
+                <p>For the navigation menu hide and show upon scroll, and for the "The Creative Section" feature text to show upon viewport is visible on devices bigger than mobile, I used ChatGPT
+                    in order to help me implementing this function and provide me with a working JavaScript code.</p>
+           </div>
+
+           <div class="video">
+               <video src="../../video/" autoplay loop></video>
+           </div>
+
+
         </section>
     </main>
 
@@ -109,3 +165,6 @@
         </div>
     </footer>
 
+    <script src="../../../index.js" defer></script>
+</body>
+</html>
