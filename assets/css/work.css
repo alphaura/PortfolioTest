@@ -34,15 +34,19 @@ img, video {
 }
 
 .bball-hero {
-    background-image: url(../img/projects/BasketballScoreboard-bg.jpg);
+    background-image: url(../img/projects/basketballScoreboard/BasketballScoreboard-bg.jpg);
 }
 
 .crl-hero {
-    background-image: url(../img/projects/crl-bg.jpg);
+    background-image: url(../img/projects/crlSite/crl-bg.jpg);
 }
 
 .cs-hero {
-    background-image: url(../img/projects/cs-bg.jpg);
+    background-image: url(../img/projects/csCannedReplies/cs-bg.jpg);
+}
+
+.hitCounter-hero {
+    background-image: url(../img/projects/hitCounter/hitCounter-bg.jpg);
 }
 
 h1 {  
@@ -168,15 +172,19 @@ h2 {
 }
 
 .bball-mock {
-    background-image: url(../img/projects/BasketballScoreboard-preview.png);
+    background-image: url(../img/projects/basketballScoreboard/BasketballScoreboard-preview.png);
 }
 
 .crl-mock {
-    background-image: url(../img/projects/CRLMockup.png);
+    background-image: url(../img/projects/crlSite/CRLMockup.png);
 }
 
 .cs-mock {
-    background-image: url(../img/projects/CSMockup.png);
+    background-image: url(../img/projects/csCannedReplies/CSMockup.png);
+}
+
+.hitCounter-mock {
+    background-image: url(../img/projects/hitCounter/hitCounterMockup.png);
 }
 
 /* Process Section */
@@ -204,6 +212,18 @@ h3 {
 
 .process p:nth-last-child(1) {
     padding-bottom: 0;
+}
+
+.process a {
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+    color: inherit;
+}
+
+.process a:hover {
+    color: #70E000;
+    text-decoration: underline;
 }
 
 /* Design Section */
