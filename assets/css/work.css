@@ -255,6 +255,16 @@ h3 {
     padding-inline: 1.5rem;
     margin: 0 auto;
     max-width: 30rem;
+    height: 30rem;
+}
+
+.design-img-1, .design-img-4 {
+    object-fit: contain;
+
+}
+
+.design-img-2, .design-img-3 {
+    object-fit: cover;
 }
 
 .design .solo-img {
@@ -544,6 +554,7 @@ video {
         padding: 0;
         margin: 0 auto;
         min-width: 100%;
+        object-fit: contain;
     }
 
     .design-img-1 {
