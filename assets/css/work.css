@@ -282,6 +282,7 @@ h3 {
 .design .solo-img {
     padding-bottom: 2rem;
     max-width: 50rem;
+    height: auto;
 }
 
 .design img + img {
@@ -524,6 +525,10 @@ video {
 
       .figma::after {
         width: 11rem;
+      }
+
+      .fem::after {
+        width: 10rem;
       }
 
       .design-specs::after {
