@@ -1,0 +1,117 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    cursor: crosshair;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Hero section */
+
+.hero {
+    background-color: whitesmoke;
+    color: black;
+    overflow: hidden;
+    padding-top: 7rem;
+}
+
+h1 {
+    text-align: center;
+    padding-block: 4rem;
+    font-size: 3rem;
+    -webkit-animation: slideTop 1.5s ease;
+            animation: slideTop 1.5s ease;
+}
+
+@-webkit-keyframes slideTop {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    } 
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideTop {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    } 
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media ( min-width: 701px) {
+
+    /* Hero section */
+
+    .hero {
+        min-height: 20rem;
+    }
+
+    h1 {
+        padding-bottom: 5rem;
+        font-size: 6rem;
+    }
+}
+
+
+@media ( min-width: 1200px ) {
+
+    /* Hero section */
+
+   h1 {
+       font-size: 12rem;
+   }
+}
