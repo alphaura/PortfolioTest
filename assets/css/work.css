@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body, h1, h2, h3, h4, h5, h6, p {
     margin: 0;
     font-family: 'Inter', sans-serif;
@@ -288,11 +292,11 @@ h3 {
 
 .design-img-1, .design-img-4 {
     object-fit: contain;
-
 }
 
 .design-img-2, .design-img-3 {
     object-fit: cover;
+    width: 100%;
 }
 
 .design .solo-img {
@@ -587,7 +591,6 @@ video {
         padding: 0;
         margin: 0 auto;
         min-width: 100%;
-        object-fit: contain;
     }
 
     .design-img-1 {
