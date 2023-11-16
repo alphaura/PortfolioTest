@@ -10,7 +10,13 @@
     <link rel="stylesheet" href="../../../css/work.css">
     <link rel="stylesheet" href="../../../css/footer.css">
     <link rel="stylesheet" href="../../../css/nav.css">
-    <link rel="icon" href="#">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../../img/favicon.ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../../img/favicon.ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../../img/favicon.ico/favicon-16x16.png">
+    <link rel="manifest" href="../../img/favicon.ico/site.webmanifest">
+    <link rel="mask-icon" href="../../img/favicon.ico/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;700&display=swap" rel="stylesheet">
@@ -20,10 +26,10 @@
     <!-- Navigation bar -->
 
     <header>
-        <div class="nav">
+        <div class="nav projects-bg">
             <div class="container">
                 <nav>
-                    <div class="nav-flex">
+                    <div class="nav-flex projects-nav">
                         <a href="../../../../index.html" class="navLogo">Front-End Developer</a>
                         <ul>
                             <li><a href="../../../../index.html">Home</a></li>
@@ -35,11 +41,12 @@
             </div>
         </div>
 
+        <div class="spacer"></div>
+
     <!-- Hero Section -->
 
-        <div class="hero">
-            <img src="../../../img/challenges/NFTMobileBanner.png" alt="NFT Card component project with the bored ape NFT collection in the background" class="mobile">
-            <img src="../../../img/challenges/NFTBannerDesktop.png" alt="NFT Card component project with the bored ape NFT collection in the background" class="desktop">
+        <div class="hero nft-hero">
+            <h1>NFT Card Component</h1>
         </div>
     </header>
 
@@ -47,33 +54,79 @@
 
     <main>
         <section class="project">
-            <div class="container">
-                <h2>WORK</h2>
-                <div class="work--flex">
-                    <div class="col1">
-                        <h1>NFT Card Component</h1>
-                    </div>
-                    <div class="col2">
-                        <p>Front-end Mentor challenge, to re-create an NFT card component having an active status upon hover</p>
-                        <div class="flex">
-                            <h3>HTML & CSS</h3>
-                            <a href="https://www.frontendmentor.io/solutions/static-nft-card-placement-using-flex-and-position-_ykEyKwFrB" target="_blank">View Challenge</a>
+
+            <!-- Project description section -->
+
+           <div class="container-info">
+               <div class="project-info">
+                        <div class="project-title">
+                            <h2>NAME OF PROJECT</h2>
+                            <p>NFT Card Component</p>
                         </div>
-                    </div>
-                </div>
-                <hr>
-                <img src="../../../img/challenges/NFTPreview.jpg" alt="Preview image of the challenge">
-                <div class="work-description">
-                    <p>This was a simple challenge using HTML & CSS, yet interesting and fun. In this challenge I had to re-create an NFT which showcases
-                        the NFT art, number, description, price, time of sale left and the creator. I have used flex-box for most of the project in order
-                        to position the images and space the text.</p>
-                    <p>In order to position the `eye` icon over the NFT art upon hover, I decided to go with the CSS position as that allows me to place
-                        image over image, by setting the parent box to `relative` and the hover image `absolute` in order to display above it. Understanding
-                        when to use flex-box and when to use position was very important in this challenge so that the overall code remains readable and 
-                        responsive.</p>
-                </div>
-                <video src="../../../video/NFTmov.mp4"  autoplay="autoplay" loop="loop" aria-label="Video showcasing the challenge"></video>
-            </div>
+                        <div class="project-lang">
+                            <h2>LANGUAGES USED</h2>
+                            <p>HTML & CSS</p>
+                        </div>
+                        <div class="project-desc">
+                            <h2>DESCRIPTION</h2>
+                            <p>Re-creating an NFT card component with an active status upon hover.</p>
+                        </div>
+                        <a href="https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U" class="figma fem" target="_blank">VIEW CHALLENGE ↗</a>
+                        <a href="https://alphaura.github.io/NFT-Preview-Card/" class="demo" target="_blank">VIEW PROJECT ↗</a>
+               </div>
+           </div>
+
+           <!-- Project photo -->
+
+           <div class="project-preview nft-mock">
+           </div>
+
+           <!-- Process section -->
+
+           <div class="process">
+                <h3>The Process</h3>
+                <p>This was a simple challenge using HTML & CSS, yet interesting and fun. In this challenge I had to re-create an NFT which showcases the NFT art, number, description, 
+                    price, time of sale left and the creator. I have used flex-box for most of the project in order to position the images and space the text.</p>
+
+                <p>In order to position the `eye` icon over the NFT art upon hover, I decided to go with the CSS position as that allows me to place image over image, by setting the 
+                    parent box to `relative` and the hover image `absolute` in order to display above it. Understanding when to use flex-box and when to use position was very important 
+                    in this challenge so that the overall code remains readable and responsive.</p>
+           </div>
+
+           <!-- Design Section -->
+
+           <div class="design">
+               <h3>The Design</h3>
+
+               <p>The design was already provided within the FrontEnd Mentor challenge itself, as the aim of these challenges is to replicate the design as much as possible following the
+                  information provided upon starting the challenge as images and a READme file are provided as a guide.</p>
+
+                <!-- <div class="design-imgs">
+                    <img src="../../../img/projects/portfolio2.0/portfolioImg1.png" alt="Preview of the project" class="design-img-1" loading="lazy">
+                    <img src="../../../img/projects/portfolio2.0/portfolioImg2.png" alt="Preview of the project" class="design-img-2" loading="lazy">
+                    <img src="../../../img/projects/portfolio2.0/portfolioImg3.png" alt="Preview of the project" class="design-img-3" loading="lazy">
+                    <img src="../../../img/projects/portfolio2.0/portfolioImg1.png" alt="Preview of the project" class="design-img-4" loading="lazy">
+                </div> -->
+
+                <img src="../../../img/challenges/NFTCardComponent/NFTPreview.jpg" alt="Preview of the project" class="solo-img" loading="lazy">
+
+           </div>
+
+           <!-- The Challenge Section -->
+
+           <div class="challenge">
+                <h3>The Challenge</h3>
+                <p>The main challenge of this project was placing the image hover affect in the middle. At the time of working on this project, I wasn't fully comfortable with using positioning
+                    as I thought that positioning wasn't that ideal, however, after having a breather and took some time away from my laptop, I thought of looking into positioning, which after
+                    some research, I came across one of the most common ways to use positioning which is to make the parent container positioned relative and the child component I wanted to
+                    make changes to positioned absolute to the parent, and the rest is CSS.</p>
+           </div>
+
+           <div class="video">
+               <video src="../../../video/NFTmov.mp4" autoplay loop></video>
+           </div>
+
+
         </section>
     </main>
 
@@ -91,13 +144,12 @@
             <div id="signature">
                 <div class="footer--flex">
                     <p class="creator">Created by Kyle M.</p>
-                    <p class="socials">Socials: <a href="https://www.linkedin.com/in/kylemagri/" target="_blank"><img src="../../../assets/img/logo/linkedin.png" alt="LinkedIn Logo"></a></p>
+                    <p class="socials">Socials: <a href="https://www.linkedin.com/in/kylemagri/" target="_blank"><img src="../../../../assets/img/logo/linkedin.png" alt="LinkedIn Logo"></a></p>
                 </div>
             </div>
         </div>
     </footer>
-    
+
     <script src="../../../index.js" defer></script>
 </body>
 </html>
-

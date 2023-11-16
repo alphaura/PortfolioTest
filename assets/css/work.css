@@ -51,6 +51,10 @@ img, video {
     background-image: url(../img/projects/portfolio2.0/portfolio-bg.jpg);
 }
 
+.nft-hero {
+    background-image: url(../img/challenges/NFTCardComponent/NFT-bg.jpg);
+}
+
 h1 {  
     text-align: center;
     font-size: 2.5rem;
@@ -150,6 +154,10 @@ h2 {
     transition: transform 0.3s ease-in-out;
   }
 
+  .fem::after {
+    width: 9rem;
+  }
+
   .design-specs::after {
     width: 7rem;
   }
@@ -191,6 +199,10 @@ h2 {
 
 .portfolio-mock {
     background-image: url(../img/projects/portfolio2.0/portfolioMockup.png);
+}
+
+.nft-mock {
+    background-image: url(../img/challenges/NFTCardComponent/nftMockup.png);
 }
 
 /* Process Section */
