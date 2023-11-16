@@ -55,6 +55,10 @@ img, video {
     background-image: url(../img/challenges/NFTCardComponent/NFT-bg.jpg);
 }
 
+.testGrid-hero {
+    background-image: url(../img/challenges/TestimonialGrid/TestGrid-bg.jpg);
+}
+
 h1 {  
     text-align: center;
     font-size: 2.5rem;
@@ -203,6 +207,10 @@ h2 {
 
 .nft-mock {
     background-image: url(../img/challenges/NFTCardComponent/nftMockup.png);
+}
+
+.testGrid-mock {
+    background-image: url(../img/challenges/TestimonialGrid/TestGridMockup.png);
 }
 
 /* Process Section */

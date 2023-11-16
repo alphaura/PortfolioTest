@@ -10,7 +10,13 @@
     <link rel="stylesheet" href="../../../css/work.css">
     <link rel="stylesheet" href="../../../css/footer.css">
     <link rel="stylesheet" href="../../../css/nav.css">
-    <link rel="icon" href="#">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../../img/favicon.ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../../img/favicon.ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../../img/favicon.ico/favicon-16x16.png">
+    <link rel="manifest" href="../../img/favicon.ico/site.webmanifest">
+    <link rel="mask-icon" href="../../img/favicon.ico/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;700&display=swap" rel="stylesheet">
@@ -20,10 +26,10 @@
     <!-- Navigation bar -->
 
     <header>
-        <div class="nav">
+        <div class="nav projects-bg">
             <div class="container">
                 <nav>
-                    <div class="nav-flex">
+                    <div class="nav-flex projects-nav">
                         <a href="../../../../index.html" class="navLogo">Front-End Developer</a>
                         <ul>
                             <li><a href="../../../../index.html">Home</a></li>
@@ -35,11 +41,12 @@
             </div>
         </div>
 
+        <div class="spacer"></div>
+
     <!-- Hero Section -->
 
-        <div class="hero">
-            <img src="../../../img/challenges/TestGridMobileBanner.png" alt="Testimonial mobile banner with the same grid design as the project" class="mobile">
-            <img src="../../../img/challenges/TestGridBannerDesktop.png" alt="Testimonial desktop banner with the same grid design as the project" class="desktop">
+        <div class="hero testGrid-hero">
+            <h1>Testimonial Grid Section</h1>
         </div>
     </header>
 
@@ -47,36 +54,78 @@
 
     <main>
         <section class="project">
-            <div class="container">
-                <h2>WORK</h2>
-                <div class="work--flex">
-                    <div class="col1">
-                        <h1>Testimonial Grid Section</h1>
-                    </div>
-                    <div class="col2">
-                        <p>Project using CSS Grid in order to make a responsive testimonial section</p>
-                        <div class="flex">
-                            <h3>HTML & CSS</h3>
-                            <a href="https://www.frontendmentor.io/solutions/section-area-using-grid-5CTs6XN42F" target="_blank">View Challenge</a>
+
+            <!-- Project description section -->
+
+           <div class="container-info">
+               <div class="project-info">
+                        <div class="project-title">
+                            <h2>NAME OF PROJECT</h2>
+                            <p>Testimonial Grid Section</p>
                         </div>
-                    </div>
-                </div>
-                <hr>
-                <img src="../../../img/challenges/TestGridPreview.png" alt="Preview image of the challenge">
-                <div class="work-description">
-                    <p>This was the first actual challenge I got to do, where I was able to solely focus on applying the Grid knowledge I had recently
-                        got, after completing the fun "course" of <a href="https://gridcritters.com/">Grid Critters</a> by Dave Geddes. I had a few challenges
-                        in the beginning as I was implementing `grid` to the wrong tags and not directly with the parent, so I took some time to just understand
-                        what the issue was, what I wanted to do, and then searched for the answer, which I found and helped me fix it.
-                    </p>
-                    <p>After identifying the issue, I started from fresh again, structured HTML in a better way that I can understand it, fixed the issue, and
-                        understood more how Grid can be used for basic functionality such as doing a testimonial section. To place the cards in their places, I
-                        used `grid-area`, as I feel it makes my life easier to create the areas of where I want the blocks to go, and then it's even easier to
-                        place the cards in these blocks.
-                    </p>
-                </div>
-                <video src="../../../video/TestGridmov.mp4"  autoplay="autoplay" loop="loop" aria-label="Video showcasing the challenge"></video>
-            </div>
+                        <div class="project-lang">
+                            <h2>LANGUAGES USED</h2>
+                            <p>HTML & CSS</p>
+                        </div>
+                        <div class="project-desc">
+                            <h2>DESCRIPTION</h2>
+                            <p>Re-creating a Testimonial grid using Grid and specific area naming for optimal positioning.</p>
+                        </div>
+                        <a href="https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7" class="figma fem" target="_blank">VIEW CHALLENGE ↗</a>
+                        <a href="https://alphaura.github.io/Testimonial-Grid-Section/" class="demo" target="_blank">VIEW PROJECT ↗</a>
+               </div>
+           </div>
+
+           <!-- Project photo -->
+
+           <div class="project-preview testGrid-mock">
+           </div>
+
+           <!-- Process section -->
+
+           <div class="process">
+                <h3>The Process</h3>
+                <p>This was the first challenge I got to do, where I was able to solely focus on applying the Grid knowledge I had recently got, after completing the  unusual and fun course
+                    of <a href="https://gridcritters.com/" target="_blank">Grid Critters</a> by Dave Geddes. The goal of this challenge was to re-create the testimonial grid design provided
+                    while using Grid in order to manage flexible and specific positioning of the cards.</p>
+           </div>
+
+           <!-- Design Section -->
+
+           <div class="design">
+               <h3>The Design</h3>
+
+               <p>The design was already provided within the FrontEnd Mentor challenge itself, as the aim of these challenges is to replicate the design as much as possible following the
+                  information provided upon starting the challenge as images and a READme file are provided as a guide.</p>
+
+                <!-- <div class="design-imgs">
+                    <img src="../../../img/projects/portfolio2.0/portfolioImg1.png" alt="Preview of the project" class="design-img-1" loading="lazy">
+                    <img src="../../../img/projects/portfolio2.0/portfolioImg2.png" alt="Preview of the project" class="design-img-2" loading="lazy">
+                    <img src="../../../img/projects/portfolio2.0/portfolioImg3.png" alt="Preview of the project" class="design-img-3" loading="lazy">
+                    <img src="../../../img/projects/portfolio2.0/portfolioImg1.png" alt="Preview of the project" class="design-img-4" loading="lazy">
+                </div> -->
+
+                <img src="../../../img/challenges/TestimonialGrid/TestGridPreview.png" alt="Preview of the project" class="solo-img" loading="lazy">
+
+           </div>
+
+           <!-- The Challenge Section -->
+
+           <div class="challenge">
+                <h3>The Challenge</h3>
+                <p>I had a few challenges in the beginning as I was implementing `grid` to the wrong tags and not directly with the parent, so I took some time to just understand what 
+                    the issue was, what I wanted to do, and then searched for the answer</p>
+
+                <p>After identifying the issue, I started from fresh again, structured the HTML in a better way that I can understand it, fixed the issue, and understood more how Grid can 
+                    be used for basic functionality such as doing a testimonial section. To place the cards in their places, I used `grid-area`, as I feel it makes my life easier to 
+                    create the areas of where I want the blocks to go, and then it's even easier to place the cards in these blocks.</p>
+           </div>
+
+           <div class="video">
+               <video src="../../../video/TestGridmov.mp4" autoplay loop></video>
+           </div>
+
+
         </section>
     </main>
 
@@ -94,13 +143,12 @@
             <div id="signature">
                 <div class="footer--flex">
                     <p class="creator">Created by Kyle M.</p>
-                    <p class="socials">Socials: <a href="https://www.linkedin.com/in/kylemagri/" target="_blank"><img src="../../../assets/img/logo/linkedin.png" alt="LinkedIn Logo"></a></p>
+                    <p class="socials">Socials: <a href="https://www.linkedin.com/in/kylemagri/" target="_blank"><img src="../../../../assets/img/logo/linkedin.png" alt="LinkedIn Logo"></a></p>
                 </div>
             </div>
         </div>
     </footer>
-    
-    <script src="../../../index.js" defer></script>
+
+    <script src="../../../../index.js" defer></script>
 </body>
 </html>
-
