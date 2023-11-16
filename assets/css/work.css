@@ -59,6 +59,10 @@ img, video {
     background-image: url(../img/challenges/TestimonialGrid/TestGrid-bg.jpg);
 }
 
+.fourCard-hero {
+    background-image: url(../img/challenges/FourCardSection/FourCard-bg.jpg);
+}
+
 h1 {  
     text-align: center;
     font-size: 2.5rem;
@@ -211,6 +215,10 @@ h2 {
 
 .testGrid-mock {
     background-image: url(../img/challenges/TestimonialGrid/TestGridMockup.png);
+}
+
+.fourCard-mock {
+    background-image: url(../img/challenges/FourCardSection/FourCardMockup.png);
 }
 
 /* Process Section */
